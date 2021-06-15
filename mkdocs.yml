@@ -1,0 +1,72 @@
+site_name: My Docs
+site_url: https://example.com/
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+  #  logo: assets/logo.png
+  #  favicon: images/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - header.autohide
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - meta
+  - def_list
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - footnotes
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.keys
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      toc_depth: 3
+
+plugins:
+#  - macros:
+#      include_dir: snippets
+  - search:
+      lang:
+        - ru
+        - en
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra:
+  unit:
+    price: 12.50

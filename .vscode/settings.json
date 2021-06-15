@@ -1,0 +1,33 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 13,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": true,
+  "workbench.startupEditor": "readme",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.settings.openDefaultKeybindings": true,
+  "workbench.settings.openDefaultSettings": true,
+  "window.autoDetectColorScheme": true,
+  "explorer.sortOrder": "type",
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.closeOnEnd": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.autofetch": true,
+  "jupyter.themeMatplotlibPlots": true,
+  "markdown.extension.preview.autoShowPreviewToSide": true,
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "path-intellisense.showHiddenFiles": true,
+  "pdf-preview.default.sidebar": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.autoComplete.addBrackets": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.linting.enabled": true
+}
